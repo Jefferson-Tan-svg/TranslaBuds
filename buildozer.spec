@@ -124,16 +124,16 @@ android.ant_path =
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid excess Internet downloads or save time
 # when an update is due and you just want to test/build your package
- android.skip_update = False
+# android.skip_update = False
 
 # (bool) If True, then automatically accept SDK license
 # agreements. This is intended for automation only. If set to False,
 # the default, you will be shown the license when first running
 # buildozer.
- android.accept_sdk_license = False
+# android.accept_sdk_license = False
 
 # (str) Android entry point, default is ok for Kivy-based app
-android.entrypoint = org.kivy.android.PythonActivity
+#android.entrypoint = org.kivy.android.PythonActivity
 
 # (str) Full name including package path of the Java class that implements Android Activity
 # use that parameter together with android.entrypoint to set custom Java class instead of PythonActivity
@@ -141,7 +141,7 @@ android.entrypoint = org.kivy.android.PythonActivity
 
 # (str) Extra xml to write directly inside the <manifest> element of AndroidManifest.xml
 # use that parameter to provide a filename from where to load your custom XML code
-android.extra_manifest_xml = ./src/android/extra_manifest.xml
+#android.extra_manifest_xml = ./src/android/extra_manifest.xml
 
 # (str) Extra xml to write directly inside the <manifest><application> tag of AndroidManifest.xml
 # use that parameter to provide a filename from where to load your custom XML arguments:
@@ -199,13 +199,13 @@ android.extra_manifest_xml = ./src/android/extra_manifest.xml
 
 # (bool) Enable AndroidX support. Enable when 'android.gradle_dependencies'
 # contains an 'androidx' package, or any package from Kotlin source.
- android.enable_androidx requires android.api >= 28
-android.enable_androidx = True
+# android.enable_androidx requires android.api >= 28
+#android.enable_androidx = True
 
 # (list) add java compile options
 # this can for example be necessary when importing certain java libraries using the 'android.gradle_dependencies' option
 # see https://developer.android.com/studio/write/java8-support for further information
- android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
+# android.add_compile_options = "sourceCompatibility = 1.8", "targetCompatibility = 1.8"
 
 # (list) Gradle repositories to add {can be necessary for some android.gradle_dependencies}
 # please enclose in double quotes 
@@ -277,14 +277,14 @@ android.enable_androidx = True
 
 # (list) The Android archs to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
 # In past, was `android.arch` as we weren't supporting builds for multiple archs at the same time.
-android.archs = arm64-v8a, armeabi-v7a
+#android.archs = arm64-v8a, armeabi-v7a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
 # android.numeric_version = 1
 
 # (bool) enables Android auto backup feature (Android API >=23)
-android.allow_backup = True
+#android.allow_backup = True
 
 # (str) XML file for custom backup rules (see official auto backup documentation)
 # android.backup_rules =
